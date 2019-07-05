@@ -6,8 +6,8 @@ pipeline {
             sh 'echo "A one line step"'
             sh ''' 
             echo "A multiline step"
-            cd /tests/results
-            ls -lrt
+            pwd
+            ls -al
             '''
             }
 		}
